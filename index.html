@@ -7,10 +7,40 @@
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css">
   <!-- CSS links-->  
   <link rel="stylesheet" href="index.css">
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <title>My color picker site</title>
 </head>
 <body>
-  
+  <form id="selector" class="selector">
+    <input id="selector__picker" class="selector__picker" type="color" name="" id="">
+    <select id="selector__type" class="selector__type" name="select" id="select">
+      <option value="monochrome">Monochrome</option>
+      <option value="monochrome-dark">Monochrome-dark</option>
+      <option value="monochrome-light">Monochrome-light</option>
+      <option value="analogic">Analogic</option>
+      <option value="complement">Complement</option>
+      <option value="analogic-complement">Analogic-Complement</option>
+      <option value="triad">Triad</option>
+    </select>
+    <button id="selector_button" class="selector__button" type="submit">Get color scheme</button>
+  </form>
+  <div id="color-view-container" class="color-view-container">
+    <div id="color-1" class="color-view"></div>
+    <div id="color-2" class="color-view"></div>
+    <div id="color-3" class="color-view"></div>
+    <div id="color-4" class="color-view"></div>
+    <div id="color-5" class="color-view"></div>
+  </div>
+  <div id="color-name-container" class="color-name-container">
+    <div id="color-1-name" class="color-name">#F00000</div>
+    <div id="color-2-name" class="color-name">#F00000</div>
+    <div id="color-3-name" class="color-name">#F00000</div>
+    <div id="color-4-name" class="color-name">#F00000</div>
+    <div id="color-5-name" class="color-name">#F00000</div>
+  </div>
 </body>
 <script src="index.js" type="module"></script>
 </html>
